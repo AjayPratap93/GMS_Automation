@@ -8,7 +8,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
 
 public class BaseClass {
 	public WebDriver driver;
@@ -21,10 +20,12 @@ public class BaseClass {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		ConfigReader config = new ConfigReader();
+		log.info("Successful browser Lounch");
 		driver.get(config.getURL());	
 	}
 	@AfterMethod
 	public void close() {
+		log.info("Close Browser");
 		driver.quit();
 	}
 }
