@@ -17,11 +17,20 @@ public class GTCC_Admin_Page {
 	
 	public void loginAdmin() throws InterruptedException {
 		ConfigReader config = new ConfigReader();
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		UserName.sendKeys(config.getUsername());
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		Password.sendKeys(config.getPassword());
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		LoginButton.click();
-		}
+		}	
+	public void loginAdminNSF() throws InterruptedException {
+		ConfigReader config = new ConfigReader();
+		Thread.sleep(1000);
+		UserName.sendKeys(config.getNSFUsername());
+		Thread.sleep(1000);
+		Password.sendKeys(config.getNSFPassword());
+		Thread.sleep(1000);
+		LoginButton.click();
+		}	
 }

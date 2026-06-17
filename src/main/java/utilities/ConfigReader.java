@@ -10,8 +10,7 @@ public class ConfigReader {
 
 	public ConfigReader() {
 		try {
-			FileInputStream fis = new FileInputStream(
-					"D:\\AutomationWorkspace\\GMS_Automation\\src\\main\\resources\\config.properties");
+			FileInputStream fis = new FileInputStream("D:\\AutomationWorkspace\\GMS_Automation\\src\\main\\resources\\config.properties");
 			prop = new Properties();
 			prop.load(fis);
 		} catch (IOException e) {
@@ -30,4 +29,13 @@ public class ConfigReader {
 	public String getPassword() {
 		return prop.getProperty("Password");
 	}
+	
+	public String getNSFUsername() {
+		return prop.getProperty("NSFUserName");
+	}
+
+	public String getNSFPassword() {
+		return prop.getProperty("NSFPass");
+	}
+	
 }

@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.GTCC_Admin_Test">
+      <class name="test.Create_Module_Users_Admin">
         <methods>
-          <include name="login"/>
+          <include name="close"/>
+          <include name="SetUp"/>
+          <include name="createModule"/>
         </methods>
-      </class> <!-- test.GTCC_Admin_Test -->
+      </class> <!-- test.Create_Module_Users_Admin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
