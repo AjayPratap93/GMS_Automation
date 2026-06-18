@@ -14,25 +14,25 @@ public class Create_Module_Users_Admin extends BaseClass {
 	void createModule() throws InterruptedException {
 		
 		String imagePath="C:/Users/Ajay Pratap/Downloads/selenium.jpg";
-		String name = RandomeData.randomString();
+		String name = "NSF"+RandomeData.randomString();
 		String phone = RandomeData.randomPhoneNumber();
-		String Email = RandomeData.randomString();
+		String Email = "NSF"+RandomeData.randomString()+"@yopmail.com";
 		GTCC_Admin_Page page = new GTCC_Admin_Page(driver);
 		page.loginAdminNSF();
 		NSF_Module_Admin user=new NSF_Module_Admin(driver);
-		Thread.sleep(2000);
-		user.OKb();
-		Thread.sleep(2000);
 		user.CreatModuleButton();
-		Thread.sleep(2000);
 		user.FirtsName(name);
-		Thread.sleep(2000);;
-		user.email(Email, phone);
-		Thread.sleep(2000);
+		user.email(Email);
+		user.phonenumber(phone);
 		user.Password("12345678", "12345678");
-		Thread.sleep(2000);
 		user.uploImage(imagePath);
-		
+		user.addPermissionbutton();
+		user.chooseUSerTYpe();
+		user.selectState();
+		user.SelectSports();
+		user.selectGender();
+		user.addPermissionButton();
+		user.finalCreateButton();
 	}
 	
 }
