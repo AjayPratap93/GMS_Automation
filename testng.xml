@@ -2,11 +2,13 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 <listeners>
-<listener class-name="utilities.ExtentReportManager"></listener>
+<listener class-name="utilites.ExtentReportManager"></listener>
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
       <class name="test.Create_Module_Users_Admin"/>
+      <class name="test.GTCC_Super_Admin_Test"/>
+      <class name="test.NSF_Module_User_Start_Registration"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

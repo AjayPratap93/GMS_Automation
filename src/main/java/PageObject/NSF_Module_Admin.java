@@ -1,8 +1,6 @@
 package PageObject;
-
 import java.time.Duration;
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -13,12 +11,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class NSF_Module_Admin {
-	
 	WebDriver driver;
 	public NSF_Module_Admin(WebDriver driver){
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 				}
+	
 	
 	// Create Module Admin
 	@FindBy(xpath="//a[normalize-space()='Create Module User']") WebElement CreateModulebutton;
@@ -46,6 +44,17 @@ public class NSF_Module_Admin {
 	@FindBy(xpath="//button[text()='Close']") WebElement Close_Button;
 	@FindBy(xpath="(//span[normalize-space()='Create Module Users'])[3]") WebElement Final_Createbutton;
 	@FindBy(xpath="//button[normalize-space()='Confirm']") WebElement Fin_Confirm_But;
+	
+	// Edit user
+	//@FindBy(xpath="//span[normalize-space()='"+name+"']/ancestor::tr[@class=\"odd\"]/descendant::i[@class=\"fs-4 las la-edit text-white\"]");
+	
+	// Team nomination
+	
+	@FindBy(xpath="//a[normalize-space()='Team Nomination']") WebElement Team_Nominatio_button;
+	@FindBy(xpath="//a[normalize-space()='Start Entry']") WebElement Start_Entry;
+	@FindBy(xpath = "//input[@placeholder=\"Enter athlete name\"]") WebElement Search_Name;
+	
+	
 	public void clickOK() {
 	    WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
 	    WebElement okBtn = wait.until(
@@ -85,7 +94,6 @@ public class NSF_Module_Admin {
 		Thread.sleep(1000);
 		AddPermission.click();
 	}
-	
 	public void chooseUSerTYpe() throws InterruptedException {
 		Thread.sleep(2000);
 		SelectUserType.click();
@@ -98,7 +106,6 @@ public class NSF_Module_Admin {
 		 * if(type.getText().equalsIgnoreCase(name)) { type.click(); return; } }
 		 */
 	}
-	
 	public void selectState() throws InterruptedException {
 		Thread.sleep(2000);
 		Click_State_Button.click();
@@ -108,7 +115,7 @@ public class NSF_Module_Admin {
 	public void SelectSports() throws InterruptedException {
 		Select_Sports.click();
 		Thread.sleep(2000);
-		String SportsName="Badminton";
+		String SportsName="Archery";
 		for(WebElement spo:Send_Sports) {
 			if(spo.getText().equals(SportsName)) {
 				spo.click();
@@ -116,7 +123,6 @@ public class NSF_Module_Admin {
 			}
 		}
 	}
-	
 	public void selectGender() throws InterruptedException {
 		Thread.sleep(2000);
 		
@@ -133,13 +139,32 @@ public class NSF_Module_Admin {
 		Thread.sleep(2000);
 		Close_Button.click();
 	}
-	
 	public void finalCreateButton() throws InterruptedException {
 		JavascriptExecutor js=(JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView({block: 'center'});", Final_Createbutton);
 		Thread.sleep(4000);
 		Final_Createbutton.click();
 		 Fin_Confirm_But.click();
-		
+	}
+	
+	public void editUserButton(String name) throws InterruptedException {
+		String editButton= "//span[normalize-space()='"+name+"']/ancestor::tr//button[contains(text(),'Edit')]";
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	    WebElement view = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(editButton)));
+	    Thread.sleep(2000);
+	    view.click();
+	}
+	public void TeamNomintion() {
+		Team_Nominatio_button.click();	
+	}
+	public void StartEntery() {
+		Start_Entry.click();
+	}
+	public void SearchEntery(String name) throws InterruptedException {
+		Thread.sleep(5000);
+		Search_Name.click();
+		Thread.sleep(5000);
+		Search_Name.sendKeys(name);
+		Thread.sleep(5000);
 	}
 }

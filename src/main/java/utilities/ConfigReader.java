@@ -37,5 +37,15 @@ public class ConfigReader {
 	public String getNSFPassword() {
 		return prop.getProperty("NSFPass");
 	}
+	public String getNSFModuleUsername() {
+		return prop.getProperty("NSFModuleUserNameBadmintion");
+	}
+
+	public String getNSFModulePassword() {
+		return prop.getProperty("NSFModulePass");
+	}
+	public String getNSFModuleUsernamE() {
+		return prop.getProperty("NSFModuleUserNameAchery");
+	}
 	
 }
