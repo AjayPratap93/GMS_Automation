@@ -1,25 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-18T16:33:49 IST" name="Default suite" finished-at="2026-06-18T16:34:30 IST" duration-ms="41206">
+  <suite started-at="2026-06-21T21:09:49 IST" name="Suite" finished-at="2026-06-21T21:11:15 IST" duration-ms="86311">
     <groups>
     </groups>
-    <test started-at="2026-06-18T16:33:49 IST" name="Default test" finished-at="2026-06-18T16:34:30 IST" duration-ms="41206">
-      <class name="test.Create_Module_Users_Admin">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:test.Create_Module_Users_Admin@58c34bb3]" started-at="2026-06-18T16:33:49 IST" name="SetUp" finished-at="2026-06-18T16:33:54 IST" duration-ms="5126" status="PASS">
+    <test started-at="2026-06-21T21:09:49 IST" name="Test" finished-at="2026-06-21T21:11:15 IST" duration-ms="86311">
+      <class name="test.GTCC_Super_Admin_Test">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:test.GTCC_Super_Admin_Test@40c80397]" started-at="2026-06-21T21:10:26 IST" name="SetUp" finished-at="2026-06-21T21:10:29 IST" duration-ms="2773" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="createModule()[pri:0, instance:test.Create_Module_Users_Admin@58c34bb3]" started-at="2026-06-18T16:33:54 IST" name="createModule" finished-at="2026-06-18T16:34:30 IST" duration-ms="35777" status="PASS">
+        <test-method signature="login()[pri:0, instance:test.GTCC_Super_Admin_Test@40c80397]" started-at="2026-06-21T21:10:29 IST" name="login" finished-at="2026-06-21T21:10:37 IST" duration-ms="7689" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="close()[pri:0, instance:test.GTCC_Super_Admin_Test@40c80397]" started-at="2026-06-21T21:10:37 IST" name="close" finished-at="2026-06-21T21:10:37 IST" duration-ms="268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- test.GTCC_Super_Admin_Test -->
+      <class name="test.Create_Module_Users_Admin">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:test.Create_Module_Users_Admin@207b8649]" started-at="2026-06-21T21:09:49 IST" name="SetUp" finished-at="2026-06-21T21:09:52 IST" duration-ms="2900" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="createModule()[pri:0, instance:test.Create_Module_Users_Admin@207b8649]" started-at="2026-06-21T21:09:52 IST" name="createModule" finished-at="2026-06-21T21:10:26 IST" duration-ms="34076" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createModule -->
-        <test-method is-config="true" signature="close()[pri:0, instance:test.Create_Module_Users_Admin@58c34bb3]" started-at="2026-06-18T16:34:30 IST" name="close" finished-at="2026-06-18T16:34:30 IST" duration-ms="263" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:test.Create_Module_Users_Admin@207b8649]" started-at="2026-06-21T21:10:26 IST" name="close" finished-at="2026-06-21T21:10:26 IST" duration-ms="223" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
       </class> <!-- test.Create_Module_Users_Admin -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="test.NSF_Module_User_Start_Registration">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:test.NSF_Module_User_Start_Registration@4b672daa]" started-at="2026-06-21T21:10:37 IST" name="SetUp" finished-at="2026-06-21T21:10:40 IST" duration-ms="2924" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="Module_User_registration()[pri:0, instance:test.NSF_Module_User_Start_Registration@4b672daa]" started-at="2026-06-21T21:10:40 IST" name="Module_User_registration" finished-at="2026-06-21T21:11:15 IST" duration-ms="34838" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Module_User_registration -->
+        <test-method is-config="true" signature="close()[pri:0, instance:test.NSF_Module_User_Start_Registration@4b672daa]" started-at="2026-06-21T21:11:15 IST" name="close" finished-at="2026-06-21T21:11:15 IST" duration-ms="260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- test.NSF_Module_User_Start_Registration -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

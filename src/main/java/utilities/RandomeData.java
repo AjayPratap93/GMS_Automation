@@ -11,6 +11,10 @@ public class RandomeData {
 	        String Name = RandomStringUtils.randomAlphabetic(5);
 	        return Name;
 	    }
+	 public static String TwoDigitString() {
+	        String Name = RandomStringUtils.randomAlphabetic(2);
+	        return Name;
+	    }
 	 public static String randomnumber() {
 	        String Number = RandomStringUtils.randomNumeric(8);
 	        return Number;

@@ -1,17 +1,17 @@
 package test;
+import java.io.IOException;
 
-import utilities.RandomeData;
 import org.testng.annotations.Test;
 
 import PageObject.GTCC_Admin_Page;
 import PageObject.NSF_Module_Admin;
-import utilities.BaseClass;
-
+import utilites.BaseClass;
+import utilities.RandomeData;
 public class Create_Module_Users_Admin extends BaseClass {
 
-	
+	String name = "NSF"+RandomeData.randomString();
 	@Test
-	void createModule() throws InterruptedException {
+	void createModule() throws InterruptedException, IOException {
 		
 		String imagePath="C:/Users/Ajay Pratap/Downloads/selenium.jpg";
 		String name = "NSF"+RandomeData.randomString();
@@ -33,6 +33,9 @@ public class Create_Module_Users_Admin extends BaseClass {
 		user.selectGender();
 		user.addPermissionButton();
 		user.finalCreateButton();
+		
+		
 	}
+	
 	
 }
