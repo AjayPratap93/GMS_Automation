@@ -36,7 +36,7 @@ public class GTCC_Admin_Page {
 	public void loginNSFModuleUser() throws InterruptedException {
 		ConfigReader config = new ConfigReader();
 		Thread.sleep(1000);
-		UserName.sendKeys(config.getNSFModuleUsername());
+		UserName.sendKeys(config.getNSFModuleUsernamallState());
 		Thread.sleep(1000);
 		Password.sendKeys(config.getNSFModulePassword());
 		Thread.sleep(1000);

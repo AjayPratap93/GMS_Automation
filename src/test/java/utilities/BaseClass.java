@@ -1,6 +1,7 @@
-package utilites;
+package utilities;
 
 import java.io.File;
+
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
@@ -19,8 +20,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import com.google.common.io.Files;
-
-import utilities.ConfigReader;
 
 public class BaseClass {
 	public WebDriver driver;
@@ -48,7 +47,7 @@ public class BaseClass {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		ConfigReader config = new ConfigReader();
 		log.info("Successful browser Lounch");
-		driver.get(config.getURL());	
+		driver.get(config.getURL());
 	}
 	@AfterMethod
 	public void close() {

@@ -10,6 +10,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import jdk.internal.org.jline.utils.Log;
+import utilities.RandomeData;
+
 public class NSF_Module_Admin {
 	WebDriver driver;
 	public NSF_Module_Admin(WebDriver driver){
@@ -160,11 +163,36 @@ public class NSF_Module_Admin {
 	public void StartEntery() {
 		Start_Entry.click();
 	}
-	public void SearchEntery(String name) throws InterruptedException {
-		Thread.sleep(5000);
+	public void SearchEntery() throws InterruptedException {
+		String Searchname=	RandomeData.TwoDigitString();
+		Search_Name.clear();
+		Thread.sleep(1000);
 		Search_Name.click();
-		Thread.sleep(5000);
-		Search_Name.sendKeys(name);
-		Thread.sleep(5000);
+		Thread.sleep(1000);
+		Search_Name.sendKeys(Searchname);
+		Thread.sleep(1000);
+		
+		 List<WebElement> addGame = driver.findElements(By.xpath("//button[text()='Add to Game']"));	
+		 
+		 if(!addGame.isEmpty()) {
+			 addGame.get(0).click();
+			 
+			 driver.findElement(By.xpath("//button[normalize-space()='Yes, add']")).click();
+			 
+		 }
+		 else {
+			// Log.info("No athlete found. Searching again...");
+			 System.out.println("No athlete found. Searching again...");
+
+			 SearchEntery();     
+
+		    }
+		
+	}
+	
+	public void clickName() {
+		
+		
+		
 	}
 }

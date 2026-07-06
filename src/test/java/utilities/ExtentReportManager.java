@@ -1,6 +1,7 @@
-package utilites;
+package utilities;
 
 import java.io.File;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -13,8 +14,6 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-
-import utilities.RandomeData;
 
 public class ExtentReportManager implements ITestListener {
 	public ExtentSparkReporter sparkReporter;// UI of report

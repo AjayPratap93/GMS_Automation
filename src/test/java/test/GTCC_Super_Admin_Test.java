@@ -3,7 +3,7 @@ package test;
 import org.testng.annotations.Test;
 
 import PageObject.GTCC_Admin_Page;
-import utilites.BaseClass;
+import utilities.BaseClass;
 
 public class GTCC_Super_Admin_Test extends BaseClass {
 	@Test
