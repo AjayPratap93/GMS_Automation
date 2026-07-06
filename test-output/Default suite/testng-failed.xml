@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.Create_Module_Users_Admin">
+      <class name="test.NSF_Module_User_Start_Registration">
         <methods>
           <include name="close"/>
           <include name="SetUp"/>
-          <include name="createModule"/>
+          <include name="Module_User_registration"/>
         </methods>
-      </class> <!-- test.Create_Module_Users_Admin -->
+      </class> <!-- test.NSF_Module_User_Start_Registration -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

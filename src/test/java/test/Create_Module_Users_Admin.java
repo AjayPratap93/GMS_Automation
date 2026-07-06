@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import PageObject.GTCC_Admin_Page;
 import PageObject.NSF_Module_Admin;
-import utilites.BaseClass;
+import utilities.BaseClass;
 import utilities.RandomeData;
 public class Create_Module_Users_Admin extends BaseClass {
 
@@ -33,9 +33,5 @@ public class Create_Module_Users_Admin extends BaseClass {
 		user.selectGender();
 		user.addPermissionButton();
 		user.finalCreateButton();
-		
-		
 	}
-	
-	
 }

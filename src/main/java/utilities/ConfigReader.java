@@ -47,5 +47,8 @@ public class ConfigReader {
 	public String getNSFModuleUsernamE() {
 		return prop.getProperty("NSFModuleUserNameAchery");
 	}
+	public String getNSFModuleUsernamallState() {
+		return prop.getProperty("NSFModuleUserNamehockey");
+	}
 	
 }
