@@ -11,16 +11,19 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import jdk.internal.org.jline.utils.Log;
+import lombok.experimental.FieldDefaults;
 import utilities.RandomeData;
 
 public class NSF_Module_Admin {
+	
+	
+	
 	WebDriver driver;
 	public NSF_Module_Admin(WebDriver driver){
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 				}
-	
-	
+
 	// Create Module Admin
 	@FindBy(xpath="//a[normalize-space()='Create Module User']") WebElement CreateModulebutton;
 	// Create Module Users
@@ -56,6 +59,25 @@ public class NSF_Module_Admin {
 	@FindBy(xpath="//a[normalize-space()='Team Nomination']") WebElement Team_Nominatio_button;
 	@FindBy(xpath="//a[normalize-space()='Start Entry']") WebElement Start_Entry;
 	@FindBy(xpath = "//input[@placeholder=\"Enter athlete name\"]") WebElement Search_Name;
+	
+	
+	// manual registration for Athlete 
+	
+	@FindBy(xpath="//a[normalize-space()='Manual Registration(Athlete)']") WebElement manual_Registration;	
+	
+	@FindBy(xpath="//input[@name='first_name']") WebElement First_Name;
+	@FindBy(xpath="//input[@name='middle_name']") WebElement Middle_Name;
+	@FindBy(xpath="//input[@name='last_name']") WebElement Last_Name;
+	@FindBy(xpath="//input[@name=\"email\"]") WebElement Athlete_Email;
+	@FindBy(xpath="//input[@name=\"dob\"]") WebElement Athlete_DOB;
+	@FindBy(xpath="//input[@name=\"mobile_number\"]") WebElement Athelet_Number;
+	@FindBy(xpath = "//input[@name=\"father_full_name\"]") WebElement Father_Name;
+	@FindBy(xpath="//span[@title=\"Gender\"]") WebElement Gender;
+	@FindBy(xpath="//li[@id=\"select2-gender_id-result-agis-M\"]") WebElement Gender_Select;
+	@FindBy(xpath="//span[@title=\"City\"]") WebElement City;
+	@FindBy(xpath="//li[normalize-space()='Amangal']") WebElement Select_City; 
+	
+	
 	
 	
 	public void clickOK() {
@@ -186,13 +208,44 @@ public class NSF_Module_Admin {
 
 			 SearchEntery();     
 
-		    }
+		    }	
+	}
+	
+	// manual registartion
+	
+	public void manualRegistartion() {
+		manual_Registration.click();
 		
 	}
 	
-	public void clickName() {
-		
-		
+	public void NameSelection(String first,String Middle ,String LastNAme) throws InterruptedException {
+		String parent = driver.getWindowHandle();
+		for (String window : driver.getWindowHandles()) {
+		    if (!window.equals(parent)) {
+		        driver.switchTo().window(window);
+		        break;
+		    }
+		}
+
+	//	System.out.println(driver.getTitle());
+		First_Name.click();
+		First_Name.sendKeys(first);
+		Middle_Name.click();
+		Middle_Name.sendKeys(Middle);
+		Last_Name.click();
+		Last_Name.sendKeys(LastNAme);
 		
 	}
-}
+	public void DOB_Email(String Email) {
+		Athlete_Email.sendKeys(Email);
+		Athlete_DOB.sendKeys("01-07-2026");
+	}
+	
+	public void Number_OTP(String number)
+	{
+		Athelet_Number.sendKeys(number);
+		
+	}
+	
+	
+	}
