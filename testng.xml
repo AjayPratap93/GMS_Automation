@@ -8,7 +8,7 @@
     <classes>
       <class name="test.Create_Module_Users_Admin"/>
       <class name="test.GTCC_Super_Admin_Test"/>
-      <class name="test.NSF_Module_User_Start_Registration"/>
+      <class name="test. NSF_Module_User_existing_Registration"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
