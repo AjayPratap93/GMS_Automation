@@ -6,20 +6,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
-      <class name="test.GTCC_Super_Admin_Test">
-        <methods>
-          <include name="close"/>
-          <include name="SetUp"/>
-          <include name="login"/>
-        </methods>
-      </class> <!-- test.GTCC_Super_Admin_Test -->
-      <class name="test.NSF_Module_User_Start_Registration">
+      <class name="test.NSF_Module_User_existing_Registration">
         <methods>
           <include name="close"/>
           <include name="SetUp"/>
           <include name="Module_User_registration"/>
         </methods>
-      </class> <!-- test.NSF_Module_User_Start_Registration -->
+      </class> <!-- test.NSF_Module_User_existing_Registration -->
       <class name="test.Create_Module_Users_Admin">
         <methods>
           <include name="close"/>

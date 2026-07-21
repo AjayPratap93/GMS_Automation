@@ -16,8 +16,6 @@ import utilities.RandomeData;
 
 public class NSF_Module_Admin {
 	
-	
-	
 	WebDriver driver;
 	public NSF_Module_Admin(WebDriver driver){
 		this.driver=driver;
@@ -75,7 +73,13 @@ public class NSF_Module_Admin {
 	@FindBy(xpath="//span[@title=\"Gender\"]") WebElement Gender;
 	@FindBy(xpath="//li[@id=\"select2-gender_id-result-agis-M\"]") WebElement Gender_Select;
 	@FindBy(xpath="//span[@title=\"City\"]") WebElement City;
-	@FindBy(xpath="//li[normalize-space()='Amangal']") WebElement Select_City; 
+	@FindBy(xpath="//li[normalize-space()='Agra']") WebElement Select_City;
+	@FindBy(xpath="//span[@title=\"Select Blood Group\"]") WebElement Blood_Group;
+	@FindBy(xpath="//li[normalize-space()='A+']") WebElement Enter_Blood_Group;
+	@FindBy(xpath="//input[@name=\"pincode\"]") WebElement PinCode;
+	@FindBy(xpath="//textarea[@name=\"full_address\"]") WebElement Address;
+	@FindBy(xpath="//input[@placeholder=\"Enter Responsible Organization\"]") WebElement EnterResponsibleOrganization;
+	@FindBy(xpath="//span[@title=\"Select ID Proof\"]") WebElement ClickProfe_ID;
 	
 	
 	
