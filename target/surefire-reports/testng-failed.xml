@@ -6,13 +6,6 @@
   </listeners>
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
-      <class name="test.NSF_Module_User_existing_Registration">
-        <methods>
-          <include name="close"/>
-          <include name="SetUp"/>
-          <include name="Module_User_registration"/>
-        </methods>
-      </class> <!-- test.NSF_Module_User_existing_Registration -->
       <class name="test.Create_Module_Users_Admin">
         <methods>
           <include name="close"/>

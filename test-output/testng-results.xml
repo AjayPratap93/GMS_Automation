@@ -1,132 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-17T11:39:05 IST" name="Suite" finished-at="2026-07-17T11:42:31 IST" duration-ms="205968">
+  <suite started-at="2026-07-21T15:20:22 IST" name="Default suite" finished-at="2026-07-21T15:20:40 IST" duration-ms="18391">
     <groups>
     </groups>
-    <test started-at="2026-07-17T11:39:05 IST" name="Test" finished-at="2026-07-17T11:42:31 IST" duration-ms="205968">
-      <class name="test.GTCC_Super_Admin_Test">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:test.GTCC_Super_Admin_Test@ea9b7c6]" started-at="2026-07-17T11:40:07 IST" name="SetUp" finished-at="2026-07-17T11:40:10 IST" duration-ms="2811" status="PASS">
+    <test started-at="2026-07-21T15:20:22 IST" name="Default test" finished-at="2026-07-21T15:20:40 IST" duration-ms="18391">
+      <class name="test.NSF_Module_User_manual_Registration">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:test.NSF_Module_User_manual_Registration@4504d271]" started-at="2026-07-21T15:20:22 IST" name="SetUp" finished-at="2026-07-21T15:20:25 IST" duration-ms="3210" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="login()[pri:0, instance:test.GTCC_Super_Admin_Test@ea9b7c6]" started-at="2026-07-17T11:40:10 IST" name="login" finished-at="2026-07-17T11:40:16 IST" duration-ms="6096" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="close()[pri:0, instance:test.GTCC_Super_Admin_Test@ea9b7c6]" started-at="2026-07-17T11:40:16 IST" name="close" finished-at="2026-07-17T11:40:16 IST" duration-ms="247" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- test.GTCC_Super_Admin_Test -->
-      <class name="test.Create_Module_Users_Admin">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:test.Create_Module_Users_Admin@34997338]" started-at="2026-07-17T11:39:06 IST" name="SetUp" finished-at="2026-07-17T11:39:16 IST" duration-ms="10473" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUp -->
-        <test-method signature="createModule()[pri:0, instance:test.Create_Module_Users_Admin@34997338]" started-at="2026-07-17T11:39:16 IST" name="createModule" finished-at="2026-07-17T11:40:06 IST" duration-ms="50378" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//span[normalize-space()='Create Module Users'])[3]"}
-  (Session info: chrome=150.0.7871.127)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cefb8d31f96121d7ecf7c0ba9da35f80, findElement {using=xpath, value=(//span[normalize-space()='Create Module Users'])[3]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.127, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\AJAYPR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60460}, goog:processID: 3212, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60460/devtoo..., se:cdpVersion: 150.0.7871.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cefb8d31f96121d7ecf7c0ba9da35f80]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//span[normalize-space()='Create Module Users'])[3]"}
-  (Session info: chrome=150.0.7871.127)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cefb8d31f96121d7ecf7c0ba9da35f80, findElement {using=xpath, value=(//span[normalize-space()='Create Module Users'])[3]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.127, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\AJAYPR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60460}, goog:processID: 3212, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60460/devtoo..., se:cdpVersion: 150.0.7871.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cefb8d31f96121d7ecf7c0ba9da35f80
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy29.getWrappedElement(Unknown Source)
-at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
-at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
-at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:461)
-at PageObject.NSF_Module_Admin.finalCreateButton(NSF_Module_Admin.java:173)
-at test.Create_Module_Users_Admin.createModule(Create_Module_Users_Admin.java:35)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createModule -->
-        <test-method is-config="true" signature="close()[pri:0, instance:test.Create_Module_Users_Admin@34997338]" started-at="2026-07-17T11:40:07 IST" name="close" finished-at="2026-07-17T11:40:07 IST" duration-ms="261" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- test.Create_Module_Users_Admin -->
-      <class name="test.NSF_Module_User_existing_Registration">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:test.NSF_Module_User_existing_Registration@e077866]" started-at="2026-07-17T11:40:16 IST" name="SetUp" finished-at="2026-07-17T11:40:19 IST" duration-ms="3030" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUp -->
-        <test-method signature="Module_User_registration()[pri:1, instance:test.NSF_Module_User_existing_Registration@e077866]" started-at="2026-07-17T11:40:19 IST" name="Module_User_registration" finished-at="2026-07-17T11:42:31 IST" duration-ms="131822" status="PASS">
+        <test-method signature="Module_User_registration()[pri:1, instance:test.NSF_Module_User_manual_Registration@4504d271]" started-at="2026-07-21T15:20:25 IST" name="Module_User_registration" finished-at="2026-07-21T15:20:40 IST" duration-ms="14717" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Module_User_registration -->
-        <test-method is-config="true" signature="close()[pri:0, instance:test.NSF_Module_User_existing_Registration@e077866]" started-at="2026-07-17T11:42:31 IST" name="close" finished-at="2026-07-17T11:42:31 IST" duration-ms="328" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:test.NSF_Module_User_manual_Registration@4504d271]" started-at="2026-07-21T15:20:40 IST" name="close" finished-at="2026-07-21T15:20:40 IST" duration-ms="418" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- test.NSF_Module_User_existing_Registration -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- test.NSF_Module_User_manual_Registration -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

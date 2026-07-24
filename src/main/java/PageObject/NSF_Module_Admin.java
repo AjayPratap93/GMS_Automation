@@ -46,7 +46,7 @@ public class NSF_Module_Admin {
 	@FindBy(xpath="//a[@class=\"btn custom-btn add_user_permissions\"]") WebElement AddPermission_Button;
 	@FindBy(xpath="//button[text()='Confirm']") WebElement Confirm_Button;
 	@FindBy(xpath="//button[text()='Close']") WebElement Close_Button;
-	@FindBy(xpath="(//span[normalize-space()='Create Module Users'])[3]") WebElement Final_Createbutton;
+	@FindBy(xpath="(//span[normalize-space()='Create Module Users'])[2]") WebElement Final_Createbutton;
 	@FindBy(xpath="//button[normalize-space()='Confirm']") WebElement Fin_Confirm_But;
 	
 	// Edit user
@@ -73,7 +73,7 @@ public class NSF_Module_Admin {
 	@FindBy(xpath="//span[@title=\"Gender\"]") WebElement Gender;
 	@FindBy(xpath="//li[@id=\"select2-gender_id-result-agis-M\"]") WebElement Gender_Select;
 	@FindBy(xpath="//span[@title=\"City\"]") WebElement City;
-	@FindBy(xpath="//li[normalize-space()='Agra']") WebElement Select_City;
+	@FindBy(xpath="//li[normalize-space()='Anjaw']") WebElement Select_City;
 	@FindBy(xpath="//span[@title=\"Select Blood Group\"]") WebElement Blood_Group;
 	@FindBy(xpath="//li[normalize-space()='A+']") WebElement Enter_Blood_Group;
 	@FindBy(xpath="//input[@name=\"pincode\"]") WebElement PinCode;
@@ -170,8 +170,8 @@ public class NSF_Module_Admin {
 	}
 	public void finalCreateButton() throws InterruptedException {
 		JavascriptExecutor js=(JavascriptExecutor) driver;
-		js.executeScript("arguments[0].scrollIntoView({block: 'center'});", Final_Createbutton);
-		Thread.sleep(4000);
+		js.executeScript("arguments[0].scrollIntoView({block:'center'});", Final_Createbutton);
+		Thread.sleep(1000);
 		Final_Createbutton.click();
 		 Fin_Confirm_But.click();
 	}
@@ -251,5 +251,23 @@ public class NSF_Module_Admin {
 		
 	}
 	
+	public void SelectGender() {
+		Gender.click();	
+		Gender_Select.click();
+	}
+	public void Select_City() {
+		City.click();
+		Select_City.click();
+	}
+
+	public void Bloodroup() {
+		Blood_Group.click();	
+		Enter_Blood_Group.click();
+	}
+
+	public void Pincode(String number) {
+		PinCode.sendKeys(number);		
+	}
+
 	
 	}
