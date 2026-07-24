@@ -9,14 +9,12 @@ import utilities.RandomeData;
 public class NSF_Module_User_manual_Registration  extends BaseClass{
 	
 	
-	
 String Searchname=	RandomeData.TwoDigitString();
 String FirstName=RandomeData.randomString();
 String MiddleName=RandomeData.randomString();
 String LastName=RandomeData.randomString();
 String Email=RandomeData.randomString()+"@yopmail.com";
 
-	
 	@Test(priority=1)
 	void Module_User_registration() throws InterruptedException {
 	GTCC_Admin_Page page= new GTCC_Admin_Page(driver);
