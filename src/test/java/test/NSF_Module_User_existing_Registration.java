@@ -19,7 +19,7 @@ String Searchname=	RandomeData.TwoDigitString();
 	NSF_Module_Admin pa=new NSF_Module_Admin(driver);
 	pa.TeamNomintion();
 	Thread.sleep(1000);
-	pa.StartEntery();
+	//pa.StartEntery();
 	Thread.sleep(1000);
 	pa.SearchEntery();
 	Thread.sleep(1000);

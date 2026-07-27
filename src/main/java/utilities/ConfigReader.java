@@ -10,7 +10,7 @@ public class ConfigReader {
 
 	public ConfigReader() {
 		try {
-			FileInputStream fis = new FileInputStream("D:\\AutomationWorkspace\\GMS_Automation\\src\\main\\resources\\config.properties");
+			FileInputStream fis = new FileInputStream("C:\\Users\\HP\\git\\GMS_Automation\\src\\main\\resources\\config.properties");
 			prop = new Properties();
 			prop.load(fis);
 		} catch (IOException e) {

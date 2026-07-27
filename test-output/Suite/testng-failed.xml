@@ -13,6 +13,13 @@
           <include name="createModule"/>
         </methods>
       </class> <!-- test.Create_Module_Users_Admin -->
+      <class name="test.NSF_Module_User_existing_Registration">
+        <methods>
+          <include name="close"/>
+          <include name="SetUp"/>
+          <include name="Module_User_registration"/>
+        </methods>
+      </class> <!-- test.NSF_Module_User_existing_Registration -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

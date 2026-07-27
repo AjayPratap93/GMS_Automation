@@ -31,3 +31,54 @@
 2026-07-21 15:20:22 INFO  test.NSF_Module_User_manual_Registration - ===== Test Execution Started =====
 2026-07-21 15:20:24 INFO  test.NSF_Module_User_manual_Registration - Successful browser Lounch
 2026-07-21 15:20:40 INFO  test.NSF_Module_User_manual_Registration - Close Browser
+2026-07-27 07:20:17 INFO  test.Create_Module_Users_Admin - ===== Test Execution Started =====
+2026-07-27 07:20:31 INFO  test.Create_Module_Users_Admin - Successful browser Lounch
+2026-07-27 07:20:31 INFO  test.GTCC_Super_Admin_Test - ===== Test Execution Started =====
+2026-07-27 07:20:32 INFO  test.GTCC_Super_Admin_Test - Successful browser Lounch
+2026-07-27 07:20:32 INFO  test.NSF_Module_User_existing_Registration - ===== Test Execution Started =====
+2026-07-27 07:20:34 INFO  test.NSF_Module_User_existing_Registration - Successful browser Lounch
+2026-07-27 07:25:49 INFO  test.Create_Module_Users_Admin - ===== Test Execution Started =====
+2026-07-27 07:25:52 INFO  test.Create_Module_Users_Admin - Successful browser Lounch
+2026-07-27 07:26:04 INFO  test.Create_Module_Users_Admin - Close Browser
+2026-07-27 07:26:04 INFO  test.GTCC_Super_Admin_Test - ===== Test Execution Started =====
+2026-07-27 07:26:06 INFO  test.GTCC_Super_Admin_Test - Successful browser Lounch
+2026-07-27 07:26:16 INFO  test.GTCC_Super_Admin_Test - Close Browser
+2026-07-27 07:26:16 INFO  test.NSF_Module_User_existing_Registration - ===== Test Execution Started =====
+2026-07-27 07:26:17 INFO  test.NSF_Module_User_existing_Registration - Successful browser Lounch
+2026-07-27 07:27:03 INFO  test.NSF_Module_User_existing_Registration - Close Browser
+2026-07-27 09:07:32 INFO  test.Create_Module_Users_Admin - ===== Test Execution Started =====
+2026-07-27 09:07:35 INFO  test.Create_Module_Users_Admin - Successful browser Lounch
+2026-07-27 09:07:45 INFO  test.Create_Module_Users_Admin - Close Browser
+2026-07-27 09:07:45 INFO  test.GTCC_Super_Admin_Test - ===== Test Execution Started =====
+2026-07-27 09:07:46 INFO  test.GTCC_Super_Admin_Test - Successful browser Lounch
+2026-07-27 09:07:51 INFO  test.GTCC_Super_Admin_Test - Close Browser
+2026-07-27 09:07:51 INFO  test.NSF_Module_User_existing_Registration - ===== Test Execution Started =====
+2026-07-27 09:07:53 INFO  test.NSF_Module_User_existing_Registration - Successful browser Lounch
+2026-07-27 09:08:02 INFO  test.NSF_Module_User_existing_Registration - Close Browser
+2026-07-27 09:36:13 INFO  test.GTCC_Super_Admin_Test - ===== Test Execution Started =====
+2026-07-27 09:36:15 INFO  test.GTCC_Super_Admin_Test - Successful browser Lounch
+2026-07-27 09:36:22 INFO  test.GTCC_Super_Admin_Test - Close Browser
+2026-07-27 09:42:10 INFO  test.Create_Module_Users_Admin - ===== Test Execution Started =====
+2026-07-27 09:42:12 INFO  test.Create_Module_Users_Admin - Successful browser Lounch
+2026-07-27 09:42:24 INFO  test.Create_Module_Users_Admin - Close Browser
+2026-07-27 09:42:25 INFO  test.GTCC_Super_Admin_Test - ===== Test Execution Started =====
+2026-07-27 09:42:26 INFO  test.GTCC_Super_Admin_Test - Successful browser Lounch
+2026-07-27 09:42:31 INFO  test.GTCC_Super_Admin_Test - Close Browser
+2026-07-27 09:42:31 INFO  test.NSF_Module_User_existing_Registration - ===== Test Execution Started =====
+2026-07-27 09:42:33 INFO  test.NSF_Module_User_existing_Registration - Successful browser Lounch
+2026-07-27 09:42:49 INFO  test.NSF_Module_User_existing_Registration - Close Browser
+2026-07-27 09:59:00 INFO  test.NSF_Module_User_existing_Registration - ===== Test Execution Started =====
+2026-07-27 09:59:02 INFO  test.NSF_Module_User_existing_Registration - Successful browser Lounch
+2026-07-27 10:00:07 INFO  test.NSF_Module_User_existing_Registration - Close Browser
+2026-07-27 10:00:56 INFO  test.NSF_Module_User_existing_Registration - ===== Test Execution Started =====
+2026-07-27 10:00:59 INFO  test.NSF_Module_User_existing_Registration - Successful browser Lounch
+2026-07-27 10:01:33 INFO  test.NSF_Module_User_existing_Registration - Close Browser
+2026-07-27 10:02:29 INFO  test.Create_Module_Users_Admin - ===== Test Execution Started =====
+2026-07-27 10:02:32 INFO  test.Create_Module_Users_Admin - Successful browser Lounch
+2026-07-27 10:02:44 INFO  test.Create_Module_Users_Admin - Close Browser
+2026-07-27 10:02:44 INFO  test.GTCC_Super_Admin_Test - ===== Test Execution Started =====
+2026-07-27 10:02:46 INFO  test.GTCC_Super_Admin_Test - Successful browser Lounch
+2026-07-27 10:02:55 INFO  test.GTCC_Super_Admin_Test - Close Browser
+2026-07-27 10:02:56 INFO  test.NSF_Module_User_existing_Registration - ===== Test Execution Started =====
+2026-07-27 10:02:58 INFO  test.NSF_Module_User_existing_Registration - Successful browser Lounch
+2026-07-27 10:03:31 INFO  test.NSF_Module_User_existing_Registration - Close Browser
