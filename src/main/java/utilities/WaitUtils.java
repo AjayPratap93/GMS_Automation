@@ -12,7 +12,7 @@ public class WaitUtils {
 	WebDriverWait wait;
 	
 	
-	WaitUtils(WebDriver driver){
+	public WaitUtils(WebDriver driver){
 		this.driver=driver;
 		wait= new WebDriverWait(driver,Duration.ofSeconds(20));
 		

@@ -24,7 +24,6 @@ public class RandomeData {
 	        String Pass = RandomStringUtils.randomAlphanumeric(5, 5);
 	        return Pass;
 	    }
-	 
 	 public static String randomPhoneNumber() {
 		  Random rand = new Random();
 		    int firstDigit = 6 + rand.nextInt(4);
@@ -32,6 +31,13 @@ public class RandomeData {
 
 		    return firstDigit + String.format("%09d", remaining);
 	 }
+	 public static String randomAadhaarNumber() {
+		    Random rand = new Random();
+		    long number = 100000000000L + (long)(rand.nextDouble() * 900000000000L);
+
+		    return String.valueOf(number);
+		}
+	 
 	 public static String customPassword() {
 		    String[] names = {"Admin", "Test", "User", "QA", "Demo"};
 		    Random rand = new Random();

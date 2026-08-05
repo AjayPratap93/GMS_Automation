@@ -1,5 +1,6 @@
 package PageObject;
 import java.time.Duration;
+
 import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -14,6 +15,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import lombok.experimental.FieldDefaults;
 import utilities.RandomeData;
+import utilities.WaitUtils;
 
 public class NSF_Module_Admin {
 	
@@ -72,16 +74,20 @@ public class NSF_Module_Admin {
 	@FindBy(xpath="//input[@name=\"mobile_number\"]") WebElement Athelet_Number;
 	@FindBy(xpath = "//input[@name=\"father_full_name\"]") WebElement Father_Name;
 	@FindBy(xpath="//span[@title=\"Gender\"]") WebElement Gender;
-	@FindBy(xpath="//li[@id=\"select2-gender_id-result-agis-M\"]") WebElement Gender_Select;
+	@FindBy(xpath="//li[normalize-space()='Male']") WebElement Gender_Select;
 	@FindBy(xpath="//span[@title=\"City\"]") WebElement City;
-	@FindBy(xpath="//li[normalize-space()='Anjaw']") WebElement Select_City;
+	@FindBy(xpath="//li[starts-with(normalize-space(), 'Am')]") WebElement Select_City;
 	@FindBy(xpath="//span[@title=\"Select Blood Group\"]") WebElement Blood_Group;
 	@FindBy(xpath="//li[normalize-space()='A+']") WebElement Enter_Blood_Group;
 	@FindBy(xpath="//input[@name=\"pincode\"]") WebElement PinCode;
 	@FindBy(xpath="//textarea[@name=\"full_address\"]") WebElement Address;
 	@FindBy(xpath="//input[@placeholder=\"Enter Responsible Organization\"]") WebElement EnterResponsibleOrganization;
 	@FindBy(xpath="//span[@title=\"Select ID Proof\"]") WebElement ClickProfe_ID;
-	
+	@FindBy(xpath = "//li[normalize-space()='Aadhaar Card']") WebElement ChooseIDType;
+	@FindBy(xpath="//input[@name=\"proof_number_id\"]") WebElement EnterAdhar;
+	@FindBy(xpath="(//input[@type='file'])[2]") WebElement IDproofImage;
+	@FindBy(xpath="(//input[@type='file'])[4]") WebElement ProfilePhoto;
+	@FindBy(xpath="//button[normalize-space()='Submit Details']") WebElement SubmitButton;
 	
 	
 	
@@ -243,16 +249,19 @@ public class NSF_Module_Admin {
 	}
 	public void DOB_Email(String Email) {
 		Athlete_Email.sendKeys(Email);
-		Athlete_DOB.sendKeys("01-07-2026");
+		Athlete_DOB.sendKeys("01-07-2018");
 	}
 	
-	public void Number_OTP(String number)
+	public void Number_OTP(String number, String Name)
 	{
 		Athelet_Number.sendKeys(number);
+		Father_Name.sendKeys(Name);
 		
 	}
 	
 	public void SelectGender() {
+		JavascriptExecutor js=(JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView({block:'center'});", Gender);
 		Gender.click();	
 		Gender_Select.click();
 	}
@@ -270,5 +279,34 @@ public class NSF_Module_Admin {
 		PinCode.sendKeys(number);		
 	}
 
+	public void Address(String address) {
+		Address.sendKeys(address);		
+	}
+	public void ResponsibleOrganization(String organization) {
+		JavascriptExecutor js=(JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView({block:'center'});", EnterResponsibleOrganization);
+		EnterResponsibleOrganization.sendKeys(organization);		
+	}
+	public void selectIdentity() {
+		JavascriptExecutor js=(JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView({block:'center'});", ClickProfe_ID);
+		ClickProfe_ID.click();
+		WaitUtils w=new WaitUtils(driver);
+		w.waitForElementVisiable(ChooseIDType);
+		ChooseIDType.click();
+	}
+	public void enterIdenityNumber(String Adhar) {
+		EnterAdhar.sendKeys(Adhar);
+	}
+	public void UploadProofImage(String image) {
+		IDproofImage.sendKeys(image);
+	}
+	public void ProfileImage(String image) {
+		ProfilePhoto.sendKeys(image);
+	}
+	public void  submitbutton()
 	
+	{
+		SubmitButton.click();	
+	}
 	}
