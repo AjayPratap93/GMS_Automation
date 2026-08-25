@@ -1,7 +1,7 @@
 package PageObject;
 import java.time.Duration;
-
 import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -11,9 +11,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import lombok.experimental.FieldDefaults;
 import utilities.RandomeData;
 import utilities.WaitUtils;
 
@@ -24,7 +21,7 @@ public class NSF_Module_Admin {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 				}
-
+	
 	// Create Module Admin
 	@FindBy(xpath="//a[normalize-space()='Create Module User']") WebElement CreateModulebutton;
 	// Create Module Users
@@ -49,7 +46,7 @@ public class NSF_Module_Admin {
 	@FindBy(xpath="//a[@class=\"btn custom-btn add_user_permissions\"]") WebElement AddPermission_Button;
 	@FindBy(xpath="//button[text()='Confirm']") WebElement Confirm_Button;
 	@FindBy(xpath="//button[text()='Close']") WebElement Close_Button;
-	@FindBy(xpath="(//span[normalize-space()='Create Module Users'])[2]") WebElement Final_Createbutton;
+	@FindBy(xpath="(//span[@class=\"indicator-label\"])[1]") WebElement Final_Createbutton;
 	@FindBy(xpath="//button[normalize-space()='Confirm']") WebElement Fin_Confirm_But;
 	
 	// Edit user
@@ -89,6 +86,10 @@ public class NSF_Module_Admin {
 	@FindBy(xpath="(//input[@type='file'])[4]") WebElement ProfilePhoto;
 	@FindBy(xpath="//button[normalize-space()='Submit Details']") WebElement SubmitButton;
 	
+	// Final Submission OF Athlete Registration form 
+	@FindBy(xpath="//span[text()='pFahf IIXda LOCTm']/ancestor::tr[@class=\"odd\"]/descendant::span[text()='Final Submit']") WebElement final_submit;
+	@FindBy(xpath="//a[text()='View Registration Data']") WebElement ViewRegistration;
+	@FindBy(xpath="//button[text()='OK']") WebElement OkFinal;
 	
 	
 	public void clickOK() {
@@ -96,7 +97,6 @@ public class NSF_Module_Admin {
 	    WebElement okBtn = wait.until(
 	        ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(text(),'OK')]"))
 	    );
-
 	    okBtn.click();
 	}
 	public void CreatModuleButton() {
@@ -178,8 +178,9 @@ public class NSF_Module_Admin {
 	public void finalCreateButton() throws InterruptedException {
 		JavascriptExecutor js=(JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView({block:'center'});", Final_Createbutton);
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		Final_Createbutton.click();
+		Thread.sleep(3000);
 		 Fin_Confirm_But.click();
 	}
 	
@@ -279,8 +280,8 @@ public class NSF_Module_Admin {
 		PinCode.sendKeys(number);		
 	}
 
-	public void Address(String address) {
-		Address.sendKeys(address);		
+	public void Address(String Addre) {
+		Address.sendKeys(Addre);		
 	}
 	public void ResponsibleOrganization(String organization) {
 		JavascriptExecutor js=(JavascriptExecutor) driver;
@@ -307,6 +308,20 @@ public class NSF_Module_Admin {
 	public void  submitbutton()
 	
 	{
-		SubmitButton.click();	
+		SubmitButton.click();
+		Fin_Confirm_But.click();
+	}
+	
+	
+	public void viewRegistartion() {
+		ViewRegistration.click();
+	}
+	public void finalSubmit() throws InterruptedException {
+		JavascriptExecutor js=(JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollLeft = 500;", final_submit);
+		final_submit.click();
+		Thread.sleep(null);
+		Fin_Confirm_But.click();
+		OkFinal.click();
 	}
 	}

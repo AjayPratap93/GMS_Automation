@@ -16,7 +16,9 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
 import com.google.common.io.Files;
@@ -25,7 +27,7 @@ public class BaseClass {
 	public WebDriver driver;
 	public 	Logger logger;
 	Logger  log =  LogManager.getLogger(this.getClass());
-	@BeforeMethod
+	@BeforeClass
 	public void SetUp() {
 		log.info("===== Test Execution Started =====");
 		
@@ -49,7 +51,7 @@ public class BaseClass {
 		log.info("Successful browser Lounch");
 		driver.get(config.getURL());
 	}
-	@AfterMethod
+	@AfterClass
 	public void close() {
 		log.info("Close Browser");
 		driver.quit();

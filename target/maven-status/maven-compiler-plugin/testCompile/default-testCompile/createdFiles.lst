@@ -1,6 +1,6 @@
+utilities\ExtentReportManager.class
 test\Create_Module_Users_Admin.class
 test\GTCC_Super_Admin_Test.class
 utilities\BaseClass.class
-utilities\ExtentReportManager.class
 test\NSF_Module_User_existing_Registration.class
 test\NSF_Module_User_manual_Registration.class

@@ -13,7 +13,7 @@ public class Create_Module_Users_Admin extends BaseClass {
 	@Test
 	void createModule() throws InterruptedException, IOException {
 		
-		String imagePath="C:/Users/Ajay Pratap/Downloads/selenium.jpg";
+		String imagePath="C:\\\\Users\\\\HP\\\\Pictures\\\\Screenshots\\\\Testing dummy images\\\\nature-background-high-resolution-wallpaper-for-a-serene-and-stunning-view-free-photo.jpg";
 		String name = "NSF"+RandomeData.randomString();
 		String phone = RandomeData.randomPhoneNumber();
 		String Email = "NSF"+RandomeData.randomString()+"@yopmail.com";
